@@ -136,7 +136,7 @@
 
             // Fun calculation algorithm
             const combined = name1 + name2;
-            const baseScore = Math.abs(name1.length - name2.length) * 10;
+            const baseScore = Math.abs(name1.length + name2.length) * 10;
             const randomFactor = Math.random() * 40;
             const score = Math.min(100, Math.max(10, 100 - baseScore + randomFactor));
             
